@@ -1,6 +1,6 @@
 .programDay {
-  width: 45%;
-  max-width: 55rem;
+  width: 47.5%;
+  max-width: 65rem;
   color: white;
   text-align: center;
   padding: 0 2rem;
@@ -22,26 +22,8 @@
   font-size: 1.8rem;
   margin: 0.5rem;
 }
-.programDay h3 {
-  font-size: 1.2rem;
-  margin: 0.4rem;
-}
 
 .programDay ul {
     list-style: none;
     padding: 0 0 1rem 0;
-}
-
-.programDay ul li ul {
-    border-bottom: 1px solid white;
-}
-
-.programDay ul li ul li a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.programDay ul li ul li div span {
-    display: inline-flex;
-    margin-right: 3rem;
 }

@@ -1,3 +1,6 @@
+import ProgramVenues from "./ProgramVenues";
+import ProgramItem from "./ProgramItem";
+
 import styles from "./ProgramDay.module.css";
 import program from "../../../data/Shows.json";
 
@@ -15,25 +18,13 @@ const ProgramDay = (props) => {
 
   const programOfThisDay = programOfThisDayRaw.Venues.map((venue) => {
     const venueProgram = venue.Shows.map((show) => {
-      return (
-        <li>
-          <div>
-            <span>
-              {show.StartTime} - {show.EndTime}
-            </span>
-            <span>
-              <a href={show.Link}>{show.Name}</a>
-            </span>
-            <span> ({show.Genre})</span>
-          </div>
-        </li>
-      );
+      return <ProgramItem show={show} key={show.Name} />;
     });
+    
     return (
-      <li>
-        <h3>{venue.Name}</h3>
-        <ul>{venueProgram}</ul>
-      </li>
+      <ProgramVenues venueName={venue.Name} key={venue.Name}>
+        {venueProgram}
+      </ProgramVenues>
     );
   });
 
