@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "mohr";
+  src: url(./assets/fonts/Mohr-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mohr";
+  src: url(./assets/fonts/Mohr-BoldIt.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "mohr";
+  src: url(./assets/fonts/Mohr-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mohr";
+  src: url(./assets/fonts/Mohr-RegularIt.otf);
+  font-weight: normal;
+  font-style: italic;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "mohr", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #e6e7e8;
 }

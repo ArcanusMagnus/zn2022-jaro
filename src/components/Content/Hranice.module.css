@@ -1,0 +1,21 @@
+.hranice {
+    background-color: rgba(230, 230, 230, .5);
+    margin: auto;
+    margin-top: -75rem;
+    width: 80%;
+    max-width: 60rem;
+    min-height: 30vh;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.hranice h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.hranice p {
+    font-size: 1.4rem;
+}

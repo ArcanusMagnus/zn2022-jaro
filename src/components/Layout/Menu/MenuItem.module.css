@@ -1,0 +1,20 @@
+.menuItem {
+    display: inline-flex;
+    font-weight: bold;
+    margin: 0 2rem;
+    font-size: 1.2rem
+  }
+  
+  .menuItem a {
+    text-decoration: none;
+    color: inherit;
+    transition: all;
+    transition-duration: 150ms;
+  }
+  
+  .menuItem a:active,
+  .menuItem a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  

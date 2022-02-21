@@ -1,0 +1,25 @@
+.header {
+  background-color: #e6e7e8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem 5rem;
+  z-index: 20;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-left img {
+  margin-right: 2.5rem;
+}
+
+.header-left__date {
+  font-weight: bold;
+}
