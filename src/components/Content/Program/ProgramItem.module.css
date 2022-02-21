@@ -1,0 +1,17 @@
+.programItem {
+    display: inline-flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.programItem span {
+    margin: 0 0.5rem;
+    display: inline-flex;
+    text-align: left;
+}
+
+.programItem span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}

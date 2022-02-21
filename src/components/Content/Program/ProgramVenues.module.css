@@ -1,0 +1,15 @@
+.programVenue {
+    border-bottom: 1px solid white;
+}
+
+.programVenue h3 {
+    font-size: 1.2rem;
+    margin: 0.4rem;
+  }
+
+.programVenue ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 6rem;
+}
