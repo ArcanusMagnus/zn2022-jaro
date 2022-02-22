@@ -4,11 +4,11 @@ import Card from "../../UI/Card";
 import styles from "./MerchItem.module.css";
 
 import p1 from "../../../assets/images/merch/p1.jpg";
-import t1 from "../../../assets/images/merch/t1.jpg";
-import t2 from "../../../assets/images/merch/t2.jpg";
-import t3 from "../../../assets/images/merch/t3.jpg";
-import t4 from "../../../assets/images/merch/t4.jpg";
-import t5 from "../../../assets/images/merch/t5.jpg";
+// import t1 from "../../../assets/images/merch/t1.jpg";
+// import t2 from "../../../assets/images/merch/t2.jpg";
+// import t3 from "../../../assets/images/merch/t3.jpg";
+// import t4 from "../../../assets/images/merch/t4.jpg";
+// import t5 from "../../../assets/images/merch/t5.jpg";
 
 const MerchItem = (props) => {
   const backgroundColors = [
