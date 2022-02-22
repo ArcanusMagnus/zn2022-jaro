@@ -1,0 +1,35 @@
+.merchItem {
+    background-color: white;
+    width: 20%;
+    max-width: 40rem;
+    height: 48%;
+    /* max-height: 45rem; */
+    margin: 3rem;
+    margin-top: 0;
+    padding: 1rem 0 0 0;
+}
+
+.merchItem h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.merchItem-photo {
+    width: 100%;
+    height: 75%;
+    position: relative;
+    background-color: black;
+}
+
+.merchItem-buy {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.merchItem-buy__price {
+    font-weight: bold;
+    font-size: 1.8rem;
+}

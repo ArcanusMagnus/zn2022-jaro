@@ -1,0 +1,40 @@
+{
+    "Merch": [
+        {
+            "id": "ponozky1",
+            "Name": "Ponožky",
+            "Price": 88,
+            "Foto": "p1"
+        },
+        {
+            "id": "triko1",
+            "Name": "Triko Low life",
+            "Price": 666,
+            "Foto": "t1"
+        },
+        {
+            "id": "triko2",
+            "Name": "Triko Memories stay forever",
+            "Price": 666,
+            "Foto": "t2"
+        },
+        {
+            "id": "triko3",
+            "Name": "Triko Mlíko buřty sardinky",
+            "Price": 666,
+            "Foto": "t3"
+        },
+        {
+            "id": "triko4",
+            "Name": "Triko Odpouštěj a miluj",
+            "Price": 666,
+            "Foto": "t4"
+        },
+        {
+            "id": "triko5",
+            "Name": "Triko 2017",
+            "Price": 666,
+            "Foto": "t5"
+        }
+    ]
+}
