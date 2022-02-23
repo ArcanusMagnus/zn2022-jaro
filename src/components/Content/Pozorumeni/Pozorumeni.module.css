@@ -1,0 +1,21 @@
+.pozorumeni {
+  background-image: url("../../../assets/images/pozorumeni-bg.jpg");
+}
+
+.pozorumeni-wrapper {
+  background-color: #ed5664;
+  width: 90%;
+  max-width: 60rem;
+  height: fit-content;
+  margin: auto auto;
+}
+
+.pozorumeni-wrapper h3 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.pozorumeni-wrapper p {
+  font-size: 1.2rem;
+}

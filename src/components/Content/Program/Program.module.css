@@ -1,13 +1,4 @@
 .program {
-  width: 100%;
-  height: calc(100vh - 5rem);
-  scroll-margin-top: 5rem;
-  position: relative;
-  top: 100vh;
-  z-index: 15;
-  background-color: #e6e7e8;
-  display: flex;
   justify-content: center;
-  padding: 3rem 0;
   background-image: url('../../../assets/images/program-bg.jpg');
 }

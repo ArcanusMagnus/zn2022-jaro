@@ -1,4 +1,5 @@
 import MerchItem from "./MerchItem";
+import Section from "../../UI/Section";
 
 import styles from "./Merch.module.css";
 import merch from "../../../data/Merch.json";
@@ -9,9 +10,9 @@ const Merch = (props) => {
       <MerchItem item={item} key={item.id}/>
     );
   });
-  return <section className={styles.merch} id="merch">
+  return <Section className={styles.merch} id="merch">
       {merchList}
-  </section>;
+  </Section>;
 };
 
 export default Merch;

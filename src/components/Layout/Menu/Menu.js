@@ -9,6 +9,7 @@ const Menu = (props) => {
       <MenuItem link={'#program'}>Program</MenuItem>
       <MenuItem link={'#merch'}>Merchandise</MenuItem>
       <MenuItem link={'#vysilac'}>Vysílač</MenuItem>
+      <MenuItem link={'#pozorumeni'}>PozorUmění</MenuItem>
       <MenuItem link={'#footer'}>O festivalu</MenuItem>
   </ul>;
 };

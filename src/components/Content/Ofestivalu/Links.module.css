@@ -1,0 +1,14 @@
+.links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.links-icon {
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+.links-icon a {
+    color: inherit;
+}

@@ -1,0 +1,20 @@
+.ofestivalu {
+    background-image: url(../../../assets/images/ofestivalu-bg.jpg);
+}
+
+.neznamehranice {
+    width: 90%;
+    max-width: 60vw;
+    height:fit-content;
+    background-color: #ffcf56;
+}
+
+.neznamehranice h3 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.neznamehranice p {
+    font-size: 1.2rem;
+    text-align: center;
+}

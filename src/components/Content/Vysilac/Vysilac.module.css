@@ -1,0 +1,23 @@
+.vysilac {
+  background-image: url("../../../assets/images/vysilac-bg.jpg");
+}
+
+.vysilac-player {
+  background-color: #50c1e8;
+  width: 90%;
+  max-width: 60rem;
+  height: fit-content;
+  margin: auto auto;
+}
+
+.vysilac h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+}
+
+.vysilac-description {
+  color: white;
+  font-size: 1.2rem;
+}

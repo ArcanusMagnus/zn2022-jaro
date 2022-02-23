@@ -21,8 +21,6 @@ const MerchItem = (props) => {
   const colorIndex = Math.floor(Math.random() * backgroundColors.length);
   const backroundColor = backgroundColors[colorIndex];
 
-  console.log(colorIndex);
-
   // needs better, dynamic solution
   return (
     <Card

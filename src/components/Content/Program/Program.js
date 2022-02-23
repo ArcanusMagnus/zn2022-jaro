@@ -1,12 +1,13 @@
 import ProgramDay from './ProgramDay';
+import Section from '../../UI/Section';
 
 import styles from './Program.module.css';
 
 const Program = props => {
-    return <section className={styles.program} id="program">
+    return <Section className={styles.program} id="program">
         <ProgramDay day="friday" />
         <ProgramDay day="saturday" />
-    </section>
+    </Section>
 }
 
 export default Program;

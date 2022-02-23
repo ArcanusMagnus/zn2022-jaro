@@ -1,0 +1,27 @@
+[
+    {
+        "id": "fb",
+        "type": "fb",
+        "link": "https://www.facebook.com/zizkovskanoc"
+    },
+    {
+        "id": "sp",
+        "type": "sp",
+        "link": "https://open.spotify.com/show/3KobdopDV4BUkr9khhzTmf?si=M5cKc1j-QtWzov92wqt6mg&dl_branch=1&nd=1"
+    },
+    {
+        "id": "yt",
+        "type": "yt",
+        "link": "https://www.youtube.com/channel/UCngrtTQ6k8IV4IaJAI1vVbQ"
+    },
+    {
+        "id": "ig",
+        "type": "ig",
+        "link": "https://www.facebook.com/zizkovskanoc"
+    },
+    {
+        "id": "mail",
+        "type": "mail",
+        "link": "mailto:info@zizkovskanoc.net"
+    }
+]
