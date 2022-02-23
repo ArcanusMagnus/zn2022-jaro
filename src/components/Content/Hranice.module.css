@@ -1,7 +1,10 @@
+.landing {
+    background-image: url(../../assets/images/header-bg.jpg);
+}
+
 .hranice {
     background-color: rgba(230, 230, 230, .5);
     margin: auto;
-    margin-top: -75rem;
     width: 80%;
     max-width: 60rem;
     min-height: 30vh;

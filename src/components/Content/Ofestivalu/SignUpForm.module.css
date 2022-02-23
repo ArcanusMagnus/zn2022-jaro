@@ -51,3 +51,8 @@
 .submit:hover {
     background-color: #ED5664;
 }
+
+.botTrap {
+    position: absolute;
+    left: -5000px;
+}

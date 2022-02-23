@@ -1,9 +1,9 @@
 .section {
     width: 100%;
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
     scroll-margin-top: 5rem;
     position: relative;
-    top: 100vh;
+    top: 5rem;
     z-index: 15;
     background-color: #e6e7e8;
     display: flex;
@@ -14,4 +14,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
   }

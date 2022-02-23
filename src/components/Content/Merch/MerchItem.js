@@ -3,7 +3,7 @@ import Card from "../../UI/Card";
 
 import styles from "./MerchItem.module.css";
 
-import p1 from "../../../assets/images/merch/p1.jpg";
+import p1 from "../../../assets/images/merch/t5.jpg";
 // import t1 from "../../../assets/images/merch/t1.jpg";
 // import t2 from "../../../assets/images/merch/t2.jpg";
 // import t3 from "../../../assets/images/merch/t3.jpg";
@@ -30,11 +30,11 @@ const MerchItem = (props) => {
       <h3>{props.item.Name}</h3>
       <div
         className={styles["merchItem-photo"]}
-        style={{ backgroundImage: `url(${p1})` }}
+        style={{ backgroundImage: `url(${p1})`, backgroundSize: `cover`}}
       ></div>
       <div className={styles['merchItem-buy']}>
         <span className={styles['merchItem-buy__price']}>{props.item.Price} Kč</span>
-        <Button>Koupit</Button>
+        <Button className={styles['merchItem-buy__button']}>Koupit</Button>
       </div>
     </Card>
   );

@@ -1,5 +1,4 @@
 import Menu from "./Menu/Menu";
-import HeadContainer from "./HeadContainer";
 
 import styles from "./Header.module.css";
 import navLogo from "../../assets/images/nav_logo.png";
@@ -12,9 +11,8 @@ const Header = (props) => {
           <img src={navLogo} alt="Žižkovská noc logo" />
           <p className={styles['header-left__date']}>25. / 26.3.2022</p>
         </div>
-        <Menu />
+        <Menu onMenuClick={props.onMenuClick} />
       </header>
-      <HeadContainer>{props.children}</HeadContainer>
     </>
   );
 };

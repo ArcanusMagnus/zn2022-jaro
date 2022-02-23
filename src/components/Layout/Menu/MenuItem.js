@@ -1,9 +1,13 @@
 import styles from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
+  const menuClickHandler = event => {
+    props.onMenuClick(event.target.id)
+  }
+
   return (
     <li className={styles.menuItem}>
-      <a href={props.link}>{props.children}</a>
+      <span onClick={menuClickHandler} id={props.link}>{props.children}</span>
     </li>
   );
 };

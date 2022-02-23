@@ -28,8 +28,8 @@ const Links = (props) => {
         icon = <FontAwesomeIcon icon={faEnvelope} />;
     }
     return (
-      <div className={styles["links-icon"]}>
-        <a href={link.link} target="_blank" rel="noreferrer" key={link.id}>
+      <div className={styles["links-icon"]}  key={link.id}>
+        <a href={link.link} target="_blank" rel="noreferrer">
           {icon}
         </a>
       </div>
