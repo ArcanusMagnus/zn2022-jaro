@@ -3,7 +3,7 @@ import styles from "./ProgramItem.module.css";
 const ProgramItem = (props) => {
   return (
     <li className={styles.programItem}>
-      <span>
+      <span className={styles['programItem-time']}>
         {props.show.StartTime} 
       </span>
       <span>

@@ -2,3 +2,26 @@
   display: flex;
   list-style: none;
 }
+
+.mobileMenu {
+  width: 100%;
+  margin-top: 5rem;
+  position: fixed;
+  z-index: 20;
+  background-color: #e6e7e8;
+  flex-wrap: wrap;
+  display: flex;
+  height: 0;
+  top: -2000px;
+  transition: height 500ms;
+}
+
+.mobileMenu li {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.mobileMenu.active {
+  top: 0;
+  height: fit-content;
+}

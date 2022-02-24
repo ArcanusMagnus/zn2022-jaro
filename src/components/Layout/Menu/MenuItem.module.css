@@ -1,10 +1,11 @@
 .menuItem {
     display: inline-flex;
+    justify-content: center;
     font-weight: bold;
     margin: 0 1.5rem;
     font-size: 1.2rem;
   }
-  
+
   .menuItem span {
     color: inherit;
     transition: all;
@@ -17,3 +18,8 @@
     cursor: pointer;
   }
   
+  @media screen and (max-width: 1600px) {
+    .menuItem{
+      font-size: 1rem;
+    }
+  }

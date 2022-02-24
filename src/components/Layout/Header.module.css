@@ -23,3 +23,49 @@
 .header-left__date {
   font-weight: bold;
 }
+
+.burger span {
+  display: inline-flex;
+  height: 0.5rem;
+  width: 90%;
+  margin-top: 0.25rem;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 500ms;
+}
+
+.burger-open span.burger-middleBar {
+  transform: rotate(405deg);
+  opacity: 0;
+}
+
+.burger-open span.burger-topBar{
+  transform: rotate(315deg);
+  position:relative;
+  top: 1rem;
+}
+
+.burger-open span.burger-bottomBar{
+  transform: rotate(405deg);
+  position: relative;
+  top: -1rem;
+}
+
+  .burger {
+    cursor: pointer;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+  }
+
+@media screen and (max-width: 450px) {
+  .header-left img {
+    margin-right: 1.25rem;
+  }
+
+  .header-left__date {
+    display: none;
+  }
+}
