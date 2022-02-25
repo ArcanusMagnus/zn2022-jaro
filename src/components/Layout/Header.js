@@ -16,6 +16,15 @@ const Header = (props) => {
     });
   };
 
+  const menuClickHandler = (event) => {
+    burgerClickHandler();
+    props.onMenuClick(event);
+  }
+
+  const logoClickHandler = () => {
+    document.location.reload();
+  }
+
   const burgerClasses = styles.burger + ((burgerActive) ? (' ' + styles['burger-open']) : '');
 
   const burger = (
@@ -30,7 +39,7 @@ const Header = (props) => {
     <>
       <header className={styles.header}>
         <div className={styles["header-left"]}>
-          <img src={navLogo} alt="Žižkovská noc logo" />
+          <img src={navLogo} alt="Žižkovská noc logo" onClick={logoClickHandler}/>
           <p className={styles["header-left__date"]}>25. / 26.3.2022</p>
         </div>
         {width < 1350 && burger}
@@ -39,7 +48,7 @@ const Header = (props) => {
         )}
       </header>
       {width < 1350 && (
-        <Menu onMenuClick={props.onMenuClick} mobileMenu={true} open={burgerActive} />
+        <Menu onMenuClick={menuClickHandler} mobileMenu={true} open={burgerActive} />
       )}
     </>
   );

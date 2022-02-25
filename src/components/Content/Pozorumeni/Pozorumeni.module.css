@@ -19,3 +19,13 @@
 .pozorumeni-wrapper p {
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 450px) {
+  .pozorumeni-wrapper h3{
+    font-size: 1.4rem;
+  }
+
+  .pozorumeni-wrapper p {
+    font-size: 1rem;
+  }
+}

@@ -26,7 +26,7 @@ const SignUpForm = (props) => {
         <div className={styles.linebreaker}></div>
         <input type="text" name="name" id="name"/>
         <div className={styles.linebreaker}></div>
-        <input type="text" name="b_d0f2beb42b80d333a7787b47c_0b3a6d5082" tabIndex="-1" value="" className={styles.botTrap}/>
+        <input type="text" name="b_d0f2beb42b80d333a7787b47c_0b3a6d5082" tabIndex="-1" defaultValue="" className={styles.botTrap}/>
         <div className={styles.linebreaker}></div>
         <Button type="submit" className={styles.submit}>Přihlásit se k odběru</Button>
       </form>

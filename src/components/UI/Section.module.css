@@ -1,18 +1,24 @@
 .section {
-    width: 100%;
-    min-height: calc(100vh - 5rem);
-    scroll-margin-top: 5rem;
-    position: relative;
-    top: 5rem;
-    z-index: 15;
-    background-color: #e6e7e8;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 3rem 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  width: 100%;
+  min-height: calc(100vh - 5rem);
+  scroll-margin-top: 5rem;
+  position: relative;
+  top: 5rem;
+  z-index: 15;
+  background-color: #e6e7e8;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 450px) {
+  .section {
+    padding: 1.5rem 0;
   }
+}

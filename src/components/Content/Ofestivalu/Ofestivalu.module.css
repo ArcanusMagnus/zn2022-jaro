@@ -1,5 +1,7 @@
 .ofestivalu {
     background-image: url(../../../assets/images/ofestivalu-bg.jpg);
+    justify-content: center;
+    flex-flow: column;
 }
 
 .neznamehranice {
@@ -7,6 +9,7 @@
     max-width: 60rem;
     height:fit-content;
     background-color: #ffcf56;
+    margin: auto;
     margin-bottom: 5rem;
 }
 
@@ -18,4 +21,14 @@
 .neznamehranice p {
     font-size: 1.2rem;
     text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .neznamehranice h3{
+        font-size: 1.4rem;
+    }
+
+    .neznamehranice p {
+        font-size: 1rem;
+    }
 }

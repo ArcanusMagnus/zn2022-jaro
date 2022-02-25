@@ -12,8 +12,7 @@
   flex-wrap: wrap;
   display: flex;
   height: 0;
-  top: -2000px;
-  transition: height 500ms;
+  top: -1000px;
 }
 
 .mobileMenu li {
@@ -24,4 +23,14 @@
 .mobileMenu.active {
   top: 0;
   height: fit-content;
+  animation: openMenu 400ms ease-out;
+}
+
+@keyframes openMenu {
+  from{
+    top: -1000px;
+  }
+  to{
+    top: 0;
+  }
 }

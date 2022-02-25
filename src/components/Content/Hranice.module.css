@@ -5,7 +5,7 @@
 .hranice {
     background-color: rgba(230, 230, 230, .5);
     margin: auto;
-    width: 80%;
+    width: 90%;
     max-width: 60rem;
     min-height: 30vh;
     position: relative;
@@ -21,4 +21,19 @@
 
 .hranice p {
     font-size: 1.4rem;
+}
+
+@media screen and (max-width: 450px) {
+    .hranice h2 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+    
+    .hranice p {
+        font-size: 1rem;
+    }
+
+    .buyTickets {
+        font-size: 1.2rem;
+    }
 }

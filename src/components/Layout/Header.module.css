@@ -19,6 +19,7 @@
 .header-left img {
   margin-right: 2.5rem;
   max-height: 3rem;
+  cursor: pointer;
 }
 
 .header-left__date {

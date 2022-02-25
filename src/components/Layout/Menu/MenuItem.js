@@ -5,8 +5,14 @@ const MenuItem = (props) => {
     props.onMenuClick(event.target.id)
   }
 
+  let classes = styles.menuItem;
+
+  if(props.currentSection === props.link){
+    classes += ' ' + styles['menuItem-active'];
+  }
+
   return (
-    <li className={styles.menuItem}>
+    <li className={classes}>
       <span onClick={menuClickHandler} id={props.link}>{props.children}</span>
     </li>
   );

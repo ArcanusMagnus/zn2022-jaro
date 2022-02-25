@@ -17,6 +17,11 @@
     transform: scale(1.1);
     cursor: pointer;
   }
+
+  .menuItem-active{
+    text-decoration: underline 2px;
+    transform: scale(1.1);
+  }
   
   @media screen and (max-width: 1600px) {
     .menuItem{
