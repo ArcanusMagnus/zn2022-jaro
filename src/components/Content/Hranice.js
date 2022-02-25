@@ -21,7 +21,7 @@ const Hranice = (props) => {
           nabídne Jarní Žižkovská noc i workshopy, literární vystoupení, výstavy
           a živý díl našeho podcastu Vysílač.
         </p>
-        <Button>
+        <Button onClick={props.onTicketsClick}>
           Kup vstupenky! <FontAwesomeIcon icon={faTicket} />
         </Button>
       </Card>
