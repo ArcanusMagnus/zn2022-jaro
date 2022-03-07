@@ -1,7 +1,7 @@
 import styles from "./Links.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
+  faFacebookF,
   faInstagram,
   faSpotify,
   faYoutube,
@@ -13,7 +13,7 @@ const Links = (props) => {
     let icon;
     switch (link.type) {
       case "fb":
-        icon = <FontAwesomeIcon icon={faFacebook} />;
+        icon = <FontAwesomeIcon icon={faFacebookF} />;
         break;
       case "ig":
         icon = <FontAwesomeIcon icon={faInstagram} />;

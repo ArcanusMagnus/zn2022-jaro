@@ -1,27 +1,73 @@
-.vysilac {
-  background-image: url("../../../assets/images/vysilac-bg.jpg");
-}
-
 .vysilac-player {
   background-color: #50c1e8;
   width: 90%;
-  max-width: 60rem;
+  max-width: 1800px;
   height: fit-content;
-  margin: auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.vysilac-left,
+.vysilac-right {
+  width: 50%;
+  margin: 0;
+}
+
+.vysilac-left {
+  padding: 0;
+  font-size: 0;
+}
+
+.vysilac-left img {
+  width: 100%;
+}
+
+.vysilac-right {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .vysilac h3 {
   font-size: 1.8rem;
   color: white;
-  margin-top: 0;
-  text-align: center;
+  margin: 0;
 }
 
 .vysilac-description {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
+.socials {
+  font-size: 2rem;
+}
+
+.socials a svg {
+  color: white;
+  margin: 1rem 1rem 0 0;
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .vysilac-player{
+    flex-flow: column-reverse;
+  }
+  .vysilac-left,
+  .vysilac-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .vysilac-right {
+    min-height: 60vw;
+  }
+}
 
 @media screen and (max-width: 450px) {
   .vysilac h3 {
@@ -30,5 +76,9 @@
   
   .vysilac-description {
       font-size: 1rem;
+  }
+
+  .vysilac-right{
+    padding: 1rem;
   }
 }

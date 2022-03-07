@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: stretch;
   padding: 1rem 2rem;
-  z-index: 20;
+  z-index: 25;
 }
 
 .header-left {
@@ -63,8 +63,9 @@
   }
 
 @media screen and (max-width: 450px) {
+
   .header-left img {
-    margin-right: 1.25rem;
+    margin-right: 1rem;
   }
 
   .header-left__date {

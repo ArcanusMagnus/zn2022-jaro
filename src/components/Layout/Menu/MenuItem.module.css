@@ -1,7 +1,6 @@
 .menuItem {
     display: inline-flex;
     justify-content: center;
-    font-weight: bold;
     margin: 0 1.5rem;
     font-size: 1.2rem;
   }
@@ -19,7 +18,7 @@
   }
 
   .menuItem-active{
-    text-decoration: underline 2px;
+    font-weight: bold;
     transform: scale(1.1);
   }
   

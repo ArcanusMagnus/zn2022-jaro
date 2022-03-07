@@ -7,20 +7,17 @@
 }
 
 .programDay__friday {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
   background-color: rgba(159, 205, 105, 1);
 }
 
 .programDay__saturday {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: rgba(234, 87, 100, 1);
 }
 
 .programDay h2 {
   font-size: 1.8rem;
   margin: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .programDay ul {
@@ -31,8 +28,6 @@
 @media screen and (max-width: 768px) {
   .programDay{
       width: 90%;
-      border-radius: 15px;
-      margin-bottom: 5rem;
   }
 }
 

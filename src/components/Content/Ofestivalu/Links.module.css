@@ -1,21 +1,17 @@
 .links {
-    display: flex;
-    justify-content: center;
+    text-align: left;
     width: 100%;
 }
 
 .links-icon {
-    font-size: 3rem;
-    margin: 0 1rem;
+    display: inline;
 }
 
-.links-icon a {
-    color: inherit;
-}
-
-@media screen and (max-width: 450px) {
-   .links-icon{
-       font-size: 2rem;
-       margin: 0 0.5rem
-   } 
+.links-icon a svg {
+    color: black;
+    margin: 1rem 1rem 0 0;
+    border: 1px solid black;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
 }

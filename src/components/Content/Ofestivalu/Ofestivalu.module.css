@@ -1,34 +1,69 @@
 .ofestivalu {
-    background-image: url(../../../assets/images/ofestivalu-bg.jpg);
-    justify-content: center;
-    flex-flow: column;
+  width: 90%;
+  max-width: 1800px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.neznamehranice {
-    width: 90%;
-    max-width: 60rem;
-    height:fit-content;
-    background-color: #ffcf56;
-    margin: auto;
-    margin-bottom: 5rem;
+.ofestivalu-left,
+.ofestivalu-right {
+  width: 50%;
+  margin: 0;
 }
 
-.neznamehranice h3 {
-    text-align: center;
-    font-size: 1.8rem;
+.ofestivalu-left {
+  padding: 0;
+  font-size: 0;
 }
 
-.neznamehranice p {
-    font-size: 1.2rem;
-    text-align: center;
+.ofestivalu-left img {
+  width: 100%;
 }
 
-@media screen and (max-width: 450px) {
-    .neznamehranice h3{
+.ofestivalu-right {
+  background-color: #ffcf56;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.ofestivalu h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.ofestivalu p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1600px) {
+    .ofestivalu{
+      flex-flow: column-reverse;
+    }
+    .ofestivalu-left,
+    .ofestivalu-right {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .ofestivalu-right {
+      min-height: 60vw;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .ofestivalu h3 {
         font-size: 1.4rem;
     }
-
-    .neznamehranice p {
+    
+    .ofestivalu-description {
         font-size: 1rem;
     }
-}
+  
+    .ofestivalu-right{
+      padding: 1rem;
+    }
+  }

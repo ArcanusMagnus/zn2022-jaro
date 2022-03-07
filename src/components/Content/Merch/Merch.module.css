@@ -1,4 +1,40 @@
-.merch {
-    background-image: url('../../../assets/images/merch-bg.jpg');
+.merchWrap {
+  width: 90%;
+}
+
+.merchContainer {
+  width: calc(4 * (400px + 1.5rem));
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  flex-flow: row;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+@media screen and (max-width: 1919px) {
+  .merchContainer {
+    width: calc(3 * (400px + 1.5rem));
   }
-  
+}
+
+@media screen and (max-width: 1439px) {
+  .merchContainer {
+    width: calc(2 * (400px + 1.5rem));
+  }
+}
+
+@media screen and (max-width: 1023px) {
+    .merchContainer {
+        width: calc(400px + 1.5rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .merchWrap{
+        width: 100%;
+    }
+    .merchContainer {
+        width: calc(300px + 1rem);
+    }
+}

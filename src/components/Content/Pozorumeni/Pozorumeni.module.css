@@ -1,31 +1,121 @@
 .pozorumeni {
-  background-image: url("../../../assets/images/pozorumeni-bg.jpg");
-}
-
-.pozorumeni-wrapper {
-  background-color: #ed5664;
+  margin: auto;
   width: 90%;
-  max-width: 60rem;
+  max-width: 1800px;
   height: fit-content;
-  margin: auto auto;
+  position: relative;
+  z-index: 5;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
 }
 
-.pozorumeni-wrapper h3 {
+.pozorumeni-left,
+.pozorumeni-right {
+  width: 50%;
+  margin: 0;
+}
+
+.pozorumeni-left {
+  padding: 0;
+  font-size: 0;
+}
+
+.pozorumeni-left img {
+  width: 100%;
+}
+
+.pozorumeni-left__square {
+  width: 50%;
+  padding: 0;
+  font-size: 0;
+  display: none;
+}
+
+.pozorumeni-left__square img {
+  width: 100%;
+}
+
+.pozorumeni-right {
+  background-color: #ea5764;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.pozorumeni h2 {
   font-size: 1.8rem;
-  margin-top: 0;
-  text-align: center;
+  margin: 0;
 }
 
-.pozorumeni-wrapper p {
-  font-size: 1.2rem;
+.pozorumeni p {
+  font-size: 1rem;
+}
+
+.socials {
+  font-size: 2rem;
+}
+
+.socials a svg {
+  color: white;
+  margin: 1rem 1rem 0 0;
+  border: 1px solid white;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1365px) {
+  .pozorumeni{
+    flex-flow: column-reverse;
+  }
+
+  .pozorumeni-left,
+  .pozorumeni-right,
+  .pozorumeni-left__square {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pozorumeni-right {
+    min-height: 60vw;
+  }
 }
 
 @media screen and (max-width: 450px) {
-  .pozorumeni-wrapper h3{
+  .pozorumeni h2 {
     font-size: 1.4rem;
+    margin-top: 0;
   }
 
-  .pozorumeni-wrapper p {
+  .pozorumeni p {
     font-size: 1rem;
+  }
+
+  .buyTickets {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  .pozorumeni-left {
+    display: none;
+  }
+
+  .pozorumeni-left__square {
+    display: block;
+  }
+
+  .pozorumeni-right{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 1365px) and (max-aspect-ratio: 3/2) {
+  .pozorumeni-right {
+    min-height: 90vw;
   }
 }

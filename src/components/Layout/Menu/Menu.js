@@ -24,7 +24,7 @@ const Menu = (props) => {
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
-        #Neznáme hranice
+        Neznáme hranice
       </MenuItem>
       <MenuItem
         link="program"

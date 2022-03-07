@@ -11,10 +11,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 3rem 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 @media screen and (max-width: 450px) {

@@ -1,23 +1,22 @@
 .programVenue {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
+    width: 90%;
+    margin: auto;
+}
+
+.programVenue:last-child {
+    border: none;
 }
 
 .programVenue h3 {
-    font-size: 1.2rem;
-    margin: 0.4rem;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 1rem;
   }
 
 .programVenue ul {
     display: flex;
-    flex-wrap: wrap;
+    justify-items: center;
     flex-direction: column;
-    max-height: 6rem;
 }
 
-@media screen and (max-width: 1600px) {
-    .programVenue ul{
-        flex-wrap: nowrap;
-        max-height: initial;
-        justify-items: center;
-    }
-}

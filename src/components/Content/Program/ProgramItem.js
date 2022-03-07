@@ -6,8 +6,11 @@ const ProgramItem = (props) => {
       <span className={styles['programItem-time']}>
         {props.show.StartTime} 
       </span>
+      &nbsp;
       <span>
-        <a href={props.show.Link}>{props.show.Name}</a> <span>({props.show.Genre})</span>
+        <a href={props.show.Link}>{props.show.Name}</a>
+        &nbsp;
+        <span>({props.show.Genre})</span>
       </span>
     </li>
   );

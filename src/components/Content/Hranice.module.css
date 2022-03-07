@@ -1,39 +1,111 @@
-.landing {
-    background-image: url(../../assets/images/header-bg.jpg);
+.hranice {
+  margin: auto;
+  width: 90%;
+  max-width: 1800px;
+  height: fit-content;
+  position: relative;
+  z-index: 5;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.hranice {
-    background-color: rgba(230, 230, 230, .5);
-    margin: auto;
-    width: 90%;
-    max-width: 60rem;
-    min-height: 30vh;
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    padding-bottom: 2rem;
+.hranice-left,
+.hranice-right {
+  width: 50%;
+  margin: 0;
+}
+
+.hranice-left {
+  padding: 0;
+  font-size: 0;
+}
+
+.hranice-left img {
+  width: 100%;
+}
+
+.hranice-left__square {
+  width: 50%;
+  padding: 0;
+  font-size: 0;
+  display: none;
+}
+
+.hranice-left__square img {
+  width: 100%;
+}
+
+.hranice-right {
+  background-color: #ffcd58;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .hranice h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 .hranice p {
-    font-size: 1.4rem;
+  font-size: 1rem;
+}
+
+.buyTickets {
+  width: 100%;
+}
+
+@media screen and (max-width: 1365px) {
+  .hranice{
+    flex-flow: column-reverse;
+  }
+
+  .hranice-left,
+  .hranice-right,
+  .hranice-left__square {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hranice-right {
+    min-height: 60vw;
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .hranice h2 {
-        font-size: 1.4rem;
-        margin-top: 0;
-    }
-    
-    .hranice p {
-        font-size: 1rem;
-    }
+  .hranice h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
 
-    .buyTickets {
-        font-size: 1.2rem;
-    }
+  .hranice p {
+    font-size: 1rem;
+  }
+
+  .buyTickets {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  .hranice-left {
+    display: none;
+  }
+
+  .hranice-left__square {
+    display: block;
+  }
+
+  .hranice-right{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 1365px) and (max-aspect-ratio: 3/2) {
+  .hranice-right {
+    min-height: 90vw;
+  }
 }

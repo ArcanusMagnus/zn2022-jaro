@@ -6,13 +6,15 @@ import merch from "../../../data/Merch.json";
 
 const Merch = (props) => {
   const merchList = merch.Merch.map((item) => {
-    return (
-      <MerchItem item={item} key={item.id}/>
-    );
+    return <MerchItem item={item} key={item.id} />;
   });
-  return <Section className={styles.merch} id="merch">
-      {merchList}
-  </Section>;
+  return (
+    <Section id="merch">
+      <div className={styles.merchWrap}>
+        <div className={styles.merchContainer}>{merchList}</div>
+      </div>
+    </Section>
+  );
 };
 
 export default Merch;

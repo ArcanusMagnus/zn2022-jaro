@@ -12,7 +12,7 @@ const ProgramDay = (props) => {
       ? styles.programDay__friday
       : styles.programDay__saturday);
 
-  const dayCz = props.day === "friday" ? "Pátek" : "Sobota";
+  const dayCz = props.day === "friday" ? "pátek 25. března" : "sobota 26. března";
   const dayIndex = props.day === "friday" ? 0 : 1;
   const programOfThisDayRaw = program.Days[dayIndex];
 
