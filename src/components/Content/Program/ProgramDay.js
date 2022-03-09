@@ -2,7 +2,6 @@ import ProgramVenues from "./ProgramVenues";
 import ProgramItem from "./ProgramItem";
 
 import styles from "./ProgramDay.module.css";
-import program from "../../../data/Shows.json";
 
 const ProgramDay = (props) => {
   const classes =
@@ -12,17 +11,17 @@ const ProgramDay = (props) => {
       ? styles.programDay__friday
       : styles.programDay__saturday);
 
-  const dayCz = props.day === "friday" ? "pátek 25. března" : "sobota 26. března";
-  const dayIndex = props.day === "friday" ? 0 : 1;
-  const programOfThisDayRaw = program.Days[dayIndex];
+  const dayCz =
+    props.day === "friday" ? "pátek 25. března" : "sobota 26. března";
+  const programOfThisDayRaw = props.bands;
 
-  const programOfThisDay = programOfThisDayRaw.Venues.map((venue) => {
-    const venueProgram = venue.Shows.map((show) => {
-      return <ProgramItem show={show} key={show.Name} />;
+  const programOfThisDay = programOfThisDayRaw.map((venue) => {
+    const venueProgram = venue.bands.map((show) => {
+      return <ProgramItem show={show} key={show._id} />;
     });
-    
+
     return (
-      <ProgramVenues venueName={venue.Name} key={venue.Name}>
+      <ProgramVenues venueName={venue.venue} key={venue.venue}>
         {venueProgram}
       </ProgramVenues>
     );

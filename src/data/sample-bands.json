@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Poločas rozpadu",
+    "genre": "literární večer",
+    "startTime": "18:00",
+    "endTime": "21:00",
+    "link": " ",
+    "day": "25-03-2022",
+    "venue_id": {"$oid": "62286ccf2d8d7568ada36fb4"}
+  },
+  {
+    "name": "Kittchen Duo",
+    "genre": "acoustic indie",
+    "startTime": "21:00",
+    "endTime": "22:00",
+    "link": " ",
+    "day": "25-03-2022",
+    "venue_id": {"$oid": "62286cfe2d8d7568ada36fb6"}
+  },
+  {
+    "name": "Will Eifel",
+    "genre": "lo-fi folk",
+    "startTime": "22:00",
+    "endTime": "23:00",
+    "link": " ",
+    "day": "25-03-2022",
+    "venue_id": {"$oid": "62286ccf2d8d7568ada36fb4"}
+  },
+  {
+    "name": "Kvietah",
+    "genre": "folk",
+    "startTime": "23:00",
+    "endTime": "0:00",
+    "link": " ",
+    "day": "25-03-2022",
+    "venue_id": {"$oid": "62286ce92d8d7568ada36fb5"}
+  }
+]

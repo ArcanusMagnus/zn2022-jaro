@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Ponožky",
+    "photo": "p1.jpg",
+    "link": "dummy link",
+    "price": 88
+  },
+  {
+    "name": "Triko 1",
+    "photo": "t1.jpg",
+    "link": "dummy link",
+    "price": 420
+  },
+  {
+    "name": "Triko 2",
+    "photo": "t2.jpg",
+    "link": "dummy link",
+    "price": 666
+  },
+  {
+    "name": "Triko 3",
+    "photo": "t3.jpg",
+    "link": "dummy link",
+    "price": 1939
+  },
+  {
+    "name": "Triko 4",
+    "photo": "t4.jpg",
+    "link": "dummy link",
+    "price": 161
+  },
+  {
+    "name": "Triko 5",
+    "photo": "t5.jpg",
+    "link": "dummy link",
+    "price": 500
+  }
+]

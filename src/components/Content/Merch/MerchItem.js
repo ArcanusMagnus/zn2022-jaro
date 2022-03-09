@@ -3,16 +3,8 @@ import Card from "../../UI/Card";
 
 import styles from "./MerchItem.module.css";
 
-import p1 from "../../../assets/images/merch/t5.jpg";
-// import t1 from "../../../assets/images/merch/t1.jpg";
-// import t2 from "../../../assets/images/merch/t2.jpg";
-// import t3 from "../../../assets/images/merch/t3.jpg";
-// import t4 from "../../../assets/images/merch/t4.jpg";
-// import t5 from "../../../assets/images/merch/t5.jpg";
-
 const MerchItem = (props) => {
   const backgroundColors = [
-    "#FFCF56",
     "#ED5664",
     "#A592C5",
     "#50C1E8",
@@ -20,6 +12,7 @@ const MerchItem = (props) => {
   ];
   const colorIndex = Math.floor(Math.random() * backgroundColors.length);
   const backroundColor = backgroundColors[colorIndex];
+  const photoPath = props.item.photo
 
   // needs better, dynamic solution
   return (
@@ -27,14 +20,14 @@ const MerchItem = (props) => {
       className={styles.merchItem}
       style={{ backgroundColor: backroundColor }}
     >
-      <h3>{props.item.Name}</h3>
+      <h3>{props.item.name}</h3>
       <div
         className={styles["merchItem-photo"]}
-        style={{ backgroundImage: `url(${p1})`, backgroundSize: `cover`}}
+        style={{ backgroundImage: `url(${photoPath})`, backgroundSize: `cover`}}
       ></div>
       <div className={styles['merchItem-buy']}>
-        <span className={styles['merchItem-buy__price']}>{props.item.Price} Kč</span>
-        <Button className={styles['merchItem-buy__button']}>Koupit</Button>
+        <span className={styles['merchItem-buy__price']}>{props.item.price} Kč</span>
+        <Button className={styles['merchItem-buy__button']}><a href={props.item.link} target="_blank" rel="noreferrer">Koupit</a></Button>
       </div>
     </Card>
   );

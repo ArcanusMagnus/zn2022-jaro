@@ -4,13 +4,13 @@ const ProgramItem = (props) => {
   return (
     <li className={styles.programItem}>
       <span className={styles['programItem-time']}>
-        {props.show.StartTime} 
+        {props.show.startTime} 
       </span>
       &nbsp;
       <span>
-        <a href={props.show.Link}>{props.show.Name}</a>
+        <a href={props.show.link}>{props.show.name}</a>
         &nbsp;
-        <span>({props.show.Genre})</span>
+        <span>({props.show.genre})</span>
       </span>
     </li>
   );
