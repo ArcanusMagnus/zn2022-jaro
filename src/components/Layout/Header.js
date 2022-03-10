@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import Menu from "./Menu/Menu";
@@ -21,10 +22,6 @@ const Header = (props) => {
     props.onMenuClick(event);
   }
 
-  const logoClickHandler = () => {
-    document.location.reload();
-  }
-
   const burgerClasses = styles.burger + ((burgerActive) ? (' ' + styles['burger-open']) : '');
 
   const burger = (
@@ -39,7 +36,7 @@ const Header = (props) => {
     <>
       <header className={styles.header}>
         <div className={styles["header-left"]}>
-          <img src={navLogo} alt="Žižkovská noc logo" onClick={logoClickHandler}/>
+          <Link to="/"><img src={navLogo} alt="Žižkovská noc logo"/></Link>
           <p className={styles["header-left__date"]}>25. a 26. března</p>
         </div>
         {width < 1350 && burger}

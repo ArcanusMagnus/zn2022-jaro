@@ -1,19 +1,22 @@
+import { NavLink } from "react-router-dom";
+import { useMatch, useResolvedPath } from "react-router-dom";
+
 import styles from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
-  const menuClickHandler = event => {
-    props.onMenuClick(event.target.id)
-  }
 
   let classes = styles.menuItem;
+  const resolved = useResolvedPath(props.link);
+  const match = useMatch({path: resolved.pathname, end: true})
 
-  if(props.currentSection === props.link){
+  if(match){
     classes += ' ' + styles['menuItem-active'];
   }
 
+  const link = props.link;
   return (
     <li className={classes}>
-      <span onClick={menuClickHandler} id={props.link}>{props.children}</span>
+      <NavLink to={link}>{props.children}</NavLink>
     </li>
   );
 };

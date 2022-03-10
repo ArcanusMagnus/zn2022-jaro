@@ -5,9 +5,10 @@ import MenuItem from "./MenuItem";
 import styles from "./Menu.module.css";
 
 const Menu = (props) => {
-  const [currentSection, setCurrentSection] = useState("home");
+  const [currentSection, setCurrentSection] = useState("/");
 
   const menuClickHandler = (event) => {
+    console.log(event);
     setCurrentSection(event);
     props.onMenuClick(event);
   };
@@ -20,14 +21,14 @@ const Menu = (props) => {
   return (
     <ul className={menuType}>
       <MenuItem
-        link="home"
+        link="/"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
         Neznáme hranice
       </MenuItem>
       <MenuItem
-        link="program"
+        link="/program"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
@@ -41,21 +42,21 @@ const Menu = (props) => {
         Merchandise
       </MenuItem> */}
       <MenuItem
-        link="vysilac"
+        link="/vysilac"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
         Vysílač
       </MenuItem>
       <MenuItem
-        link="pozorumeni"
+        link="/pozorumeni"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
         PozorUmění
       </MenuItem>
       <MenuItem
-        link="about"
+        link="/about"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >

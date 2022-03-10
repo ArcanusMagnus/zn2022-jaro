@@ -16,3 +16,7 @@
     font-size: 2rem;
     cursor: pointer;
 }
+
+.closeButton a {
+    color: inherit;
+}

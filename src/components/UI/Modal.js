@@ -1,9 +1,14 @@
+import { Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 
 import styles from "./Modal.module.css";
 
 const Backdrop = (props) => {
-  return <div className={styles.backdrop} onClick={props.onClose}></div>;
+  return (
+    <Link to="/">
+      <div className={styles.backdrop} onClick={props.onClose}></div>
+    </Link>
+  );
 };
 
 const ModalOverlay = (props) => {
@@ -14,13 +19,19 @@ const ModalOverlay = (props) => {
   );
 };
 
-const portalLocation = document.getElementById('overlays');
+const portalLocation = document.getElementById("overlays");
 
 const Modal = (props) => {
   return (
     <>
-      {ReactDOM.createPortal(<Backdrop onClose={props.onClose} />, portalLocation)}
-      {ReactDOM.createPortal(<ModalOverlay>{props.children}</ModalOverlay>, portalLocation)}
+      {ReactDOM.createPortal(
+        <Backdrop onClose={props.onClose} />,
+        portalLocation
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay>{props.children}</ModalOverlay>,
+        portalLocation
+      )}
     </>
   );
 };

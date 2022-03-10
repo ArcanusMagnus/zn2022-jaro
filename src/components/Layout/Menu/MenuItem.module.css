@@ -5,14 +5,19 @@
     font-size: 1.2rem;
   }
 
-  .menuItem span {
+  .menuItem a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .menuItem a {
     color: inherit;
     transition: all;
     transition-duration: 150ms;
   }
   
-  .menuItem span:active,
-  .menuItem span:hover {
+  .menuItem a:active,
+  .menuItem a:hover {
     transform: scale(1.1);
     cursor: pointer;
   }

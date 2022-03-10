@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTicket } from "@fortawesome/free-solid-svg-icons";
 
@@ -37,12 +38,14 @@ const Hranice = (props) => {
                 <FontAwesomeIcon icon={faTicket} /> Kup vstupenky!
               </a>
             </Button> */}
-            <Button
-              onClick={props.onTicketsClick}
-              className={styles.buyTickets}
-            >
-              <FontAwesomeIcon icon={faTicket} /> Kup vstupenky!
-            </Button>
+            <Link to="/tickets">
+              <Button
+                onClick={props.onTicketsClick}
+                className={styles.buyTickets}
+              >
+                <FontAwesomeIcon icon={faTicket} /> Kup vstupenky!
+              </Button>
+            </Link>
           </div>
         </div>
       </Card>

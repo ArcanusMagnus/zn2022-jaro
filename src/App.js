@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Layout/Header";
 import Hranice from "./components/Content/Hranice";
@@ -20,38 +21,20 @@ const App = () => {
     setTicketsFormActive(true);
   };
 
-  const [section, setSection] = useState('home');
-  const menuClickHandler = (event) => {
-    setSection(event);
-  }
-
-  let content;
-
-  switch(section){
-    case 'program':
-      content = <Program />;
-      break;
-    case 'merch':
-      content = <Merch />;
-      break;
-    case 'vysilac':
-      content = <Vysilac />;
-      break;
-    case 'pozorumeni':
-      content = <Pozorumeni />;
-      break;
-    case 'about':
-      content = <Ofestivalu />;
-      break;
-    default:
-      content = <Hranice onTicketsClick={ticketsFormOpenHandler} />;
-  }
-
   return (
     <>
-      <Header onMenuClick={menuClickHandler}/>
+      <Header/>
       {ticketsFormActive && <Tickets onClose={ticketsFormCloseHandler} />}
-      {content}
+      <Routes>
+        <Route path="/" element={<Hranice onTicketsClick={ticketsFormOpenHandler} />}>
+          <Route path="tickets"/>
+        </Route>
+        <Route path="program" element={<Program />} />
+        <Route path="merch" element={<Merch />} />
+        <Route path="vysilac" element={<Vysilac />} />
+        <Route path="pozorumeni" element={<Pozorumeni />} />
+        <Route path="about" element={<Ofestivalu />} />
+      </Routes>
     </>
   );
 };
