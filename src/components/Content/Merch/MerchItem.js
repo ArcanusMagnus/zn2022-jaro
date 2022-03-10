@@ -23,7 +23,7 @@ const MerchItem = (props) => {
       <h3>{props.item.name}</h3>
       <div
         className={styles["merchItem-photo"]}
-        style={{ backgroundImage: `url(${photoPath})`, backgroundSize: `cover`}}
+        style={{ backgroundImage: `url(http://89.221.219.23:8080/images/${photoPath})`, backgroundSize: `cover`}}
       ></div>
       <div className={styles['merchItem-buy']}>
         <span className={styles['merchItem-buy__price']}>{props.item.price} Kč</span>

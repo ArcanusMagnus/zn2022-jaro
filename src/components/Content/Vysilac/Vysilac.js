@@ -1,8 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+
 import VysilacPlayer from "./VysilacPlayer";
 import Card from "../../UI/Card";
 import Section from "../../UI/Section";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./Vysilac.module.css";
 import image from "../../../assets/images/vysilac-bg.jpg";

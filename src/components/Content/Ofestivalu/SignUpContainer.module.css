@@ -1,0 +1,28 @@
+.signUpForm form {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+  }
+  
+  .signUpForm form input {
+    background-color: inherit;
+    font-size: 1.4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    line-height: 2.4rem;
+    border: 1px solid black;
+  }
+  
+  .signUpForm form input:active,
+  .signUpForm form input:focus {
+    border: inherit;
+    color: black;
+    border-radius: 0;
+  }
+  
+  .botTrap {
+    position: absolute;
+    left: -5000px;
+  }
+  

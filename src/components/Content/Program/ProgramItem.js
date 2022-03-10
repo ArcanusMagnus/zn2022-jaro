@@ -1,6 +1,12 @@
 import styles from "./ProgramItem.module.css";
 
 const ProgramItem = (props) => {
+  let link;
+  if(props.show.link === ''){
+    link = props.show.name;
+  } else {
+    link = <a href={props.show.link} target="_blank" rel="noreferrer">{props.show.name}</a>
+  }
   return (
     <li className={styles.programItem}>
       <span className={styles['programItem-time']}>
@@ -8,7 +14,7 @@ const ProgramItem = (props) => {
       </span>
       &nbsp;
       <span>
-        <a href={props.show.link}>{props.show.name}</a>
+        {link}
         &nbsp;
         <span>({props.show.genre})</span>
       </span>

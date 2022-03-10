@@ -1,0 +1,129 @@
+[
+    {
+      "name": "OBJECT:PARADISE - Warm Braník",
+      "genre": "jazz / post-punk",
+      "startTime": "18:30",
+      "endTime": "19:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286c612d8d7568ada36fb3"}
+    },
+    {
+      "name": "tba",
+      "genre": "tba",
+      "startTime": "20:00",
+      "endTime": "20:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286c612d8d7568ada36fb3"}
+    },
+    {
+      "name": "Opak Dissu",
+      "genre": "trap",
+      "startTime": "21:00",
+      "endTime": "22:00",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286c612d8d7568ada36fb3"}
+    },
+    {
+      "name": "ICATERINA.",
+      "genre": "alternative pop",
+      "startTime": "19:00",
+      "endTime": "19:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ccf2d8d7568ada36fb4"}
+    },
+    {
+      "name": "Older",
+      "genre": "lo-fi pop",
+      "startTime": "20:00",
+      "endTime": "20:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ccf2d8d7568ada36fb4"}
+    },
+    {
+      "name": "Role",
+      "genre": "alternative pop",
+      "startTime": "21:00",
+      "endTime": "22:00",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ccf2d8d7568ada36fb4"}
+    },
+    {
+      "name": "Lidská Hyena",
+      "genre": "lo-fi folk",
+      "startTime": "19:00",
+      "endTime": "19:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ce92d8d7568ada36fb5"}
+    },
+    {
+      "name": "Jiný Metro",
+      "genre": "folk",
+      "startTime": "20:00",
+      "endTime": "20:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ce92d8d7568ada36fb5"}
+    },
+    {
+      "name": "Kitchen Duo",
+      "genre": "acoustic indie",
+      "startTime": "21:00",
+      "endTime": "21:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ce92d8d7568ada36fb5"}
+    },
+    {
+      "name": "Sunbeam",
+      "genre": "acoustic grunge",
+      "startTime": "22:00",
+      "endTime": "22:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286ce92d8d7568ada36fb5"}
+    },
+    {
+      "name": "Duck",
+      "genre": "reggae / hip-hop",
+      "startTime": "21:00",
+      "endTime": "21:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286cfe2d8d7568ada36fb6"}
+    },
+    {
+      "name": "†holyvandalboi†",
+      "genre": "rap",
+      "startTime": "22:00",
+      "endTime": "22:40",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286cfe2d8d7568ada36fb6"}
+    },
+    {
+      "name": "Don K & Mysh",
+      "genre": "techno",
+      "startTime": "23:00",
+      "endTime": "5:00",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286cfe2d8d7568ada36fb6"}
+    },
+    {
+      "name": "Žižkovský Montmartre",
+      "genre": "doprovodný program",
+      "startTime": "15:00",
+      "endTime": "18:00",
+      "link": "",
+      "day": "25-03-2022",
+      "venue_id": {"$oid": "62286d2d2d8d7568ada36fb7"}
+    }
+    ]
+  

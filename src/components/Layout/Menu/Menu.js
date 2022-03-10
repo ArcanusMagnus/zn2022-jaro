@@ -33,13 +33,13 @@ const Menu = (props) => {
       >
         Program
       </MenuItem>
-      <MenuItem
+      {/* <MenuItem
         link="merch"
         onMenuClick={menuClickHandler}
         currentSection={currentSection}
       >
         Merchandise
-      </MenuItem>
+      </MenuItem> */}
       <MenuItem
         link="vysilac"
         onMenuClick={menuClickHandler}

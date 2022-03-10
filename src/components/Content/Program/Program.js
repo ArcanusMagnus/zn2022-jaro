@@ -15,7 +15,7 @@ const Program = (props) => {
 
   useEffect(() => {
     const fetchProgram = async () => {
-      const response = await fetch("http://localhost:8080/bands/");
+      const response = await fetch("http://89.221.219.23:8080/bands/");
 
       if (!response.ok) {
         throw new Error("Načtení kapel selhalo.");
@@ -49,7 +49,7 @@ const Program = (props) => {
 
       let saturdayVenues = [];
       for(const band of loadedBandsSaturday){
-        if(!saturdayVenues.find(venue => venue === band.venue)){
+        if(!saturdayVenues.find(venue => venue.venue === band.venue)){
           saturdayVenues.push({venue: band.venue, venue_no: band.venue_no, bands: [band]});
         } else{
           let venuePointer = saturdayVenues.find(venue => venue.venue === band.venue);
@@ -74,7 +74,7 @@ const Program = (props) => {
   if (isLoading) {
     content = (
       <div>
-        <p>Nahrávám program...</p>
+        <p>Načítám program...</p>
       </div>
     );
   }

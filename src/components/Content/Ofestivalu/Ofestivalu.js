@@ -1,19 +1,17 @@
 import Section from "../../UI/Section";
 import Card from "../../UI/Card";
 import Links from "./Links";
-import SignUpForm from "./SignUpForm";
+import SignUpContainer from "./SignUpContainer";
+import AtmoPhoto from "../../UI/AtmoPhoto";
 
 import styles from "./Ofestivalu.module.css";
-import image from "../../../assets/images/ofestivalu-bg.jpg";
 import links from "../../../data/Links.json";
 
 const Ofestivalu = (props) => {
   return (
     <Section>
       <Card className={styles.ofestivalu}>
-        <div className={styles["ofestivalu-left"]}>
-          <img src={image} alt="" />
-        </div>
+        <AtmoPhoto squareClass={styles["ofestivalu-left"]} />
         <div className={styles["ofestivalu-right"]}>
           <h3>#Neznámehranice</h3>
           <p>
@@ -28,7 +26,7 @@ const Ofestivalu = (props) => {
             sítích.
           </p>
           <Links links={links} />
-          <SignUpForm />
+          <SignUpContainer />
         </div>
       </Card>
     </Section>

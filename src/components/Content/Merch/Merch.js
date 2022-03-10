@@ -13,7 +13,7 @@ const Merch = (props) => {
 
   useEffect(() => {
     const fetchMerch = async () => {
-      const response = await fetch("http://localhost:8080/merch/");
+      const response = await fetch("http://89.221.219.23:8080/merch/");
 
       if (!response.ok) {
         throw new Error("Načtení merche selhalo.");
