@@ -19,7 +19,6 @@ const Header = (props) => {
 
   const menuClickHandler = (event) => {
     burgerClickHandler();
-    props.onMenuClick(event);
   }
 
   const burgerClasses = styles.burger + ((burgerActive) ? (' ' + styles['burger-open']) : '');
@@ -41,7 +40,7 @@ const Header = (props) => {
         </div>
         {width < 1350 && burger}
         {width >= 1350 && (
-          <Menu onMenuClick={props.onMenuClick} mobileMenu={false} />
+          <Menu onMenuClick={menuClickHandler} mobileMenu={false} />
         )}
       </header>
       {width < 1350 && (

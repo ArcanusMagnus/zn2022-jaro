@@ -27,13 +27,13 @@ const App = () => {
       {ticketsFormActive && <Tickets onClose={ticketsFormCloseHandler} />}
       <Routes>
         <Route path="/" element={<Hranice onTicketsClick={ticketsFormOpenHandler} />}>
-          <Route path="tickets"/>
+          <Route path="tickets" element={<Tickets onClose={ticketsFormCloseHandler} />} />
         </Route>
-        <Route path="program" element={<Program />} />
-        <Route path="merch" element={<Merch />} />
-        <Route path="vysilac" element={<Vysilac />} />
-        <Route path="pozorumeni" element={<Pozorumeni />} />
-        <Route path="about" element={<Ofestivalu />} />
+        <Route path="program" exact element={<Program />} />
+        <Route path="merch" exact element={<Merch />} />
+        <Route path="vysilac" exact element={<Vysilac />} />
+        <Route path="pozorumeni" exact element={<Pozorumeni />} />
+        <Route path="about" exact element={<Ofestivalu />} />
       </Routes>
     </>
   );

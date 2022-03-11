@@ -14,6 +14,15 @@ const ProgramDay = (props) => {
   const dayCz =
     props.day === "friday" ? "pátek 25. března" : "sobota 26. března";
   const programOfThisDayRaw = props.bands;
+  for(const venue of programOfThisDayRaw){
+    venue.bands.sort((a,b) => {
+      let timeA = a.startTime.split(':');
+      let timeAValue = +timeA[0] * 60 + +timeA[1];
+      let timeB = b.startTime.split(':');
+      let timeBValue = +timeB[0] * 60 + +timeA[1];
+      return timeAValue >= timeBValue ? 1 : -1
+    });
+  }
 
   const programOfThisDay = programOfThisDayRaw.map((venue) => {
     const venueProgram = venue.bands.map((show) => {

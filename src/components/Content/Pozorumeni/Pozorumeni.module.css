@@ -46,7 +46,7 @@
   justify-content: center;
 }
 
-.pozorumeni h2 {
+.pozorumeni h3 {
   font-size: 1.8rem;
   margin: 0;
 }
@@ -66,6 +66,16 @@
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .pozorumeni-left__square {
+    display: block;
+  }
+
+  .pozorumeni-left {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1365px) {

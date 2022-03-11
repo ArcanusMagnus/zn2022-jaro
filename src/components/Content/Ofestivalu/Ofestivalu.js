@@ -17,9 +17,9 @@ const Ofestivalu = (props) => {
           <p>
             A proto pro vás poslední roky připravujeme akce i mimo tři dny, kdy
             všichni korzujeme Žižkovem. Kultura se proměňuje, my se posouváme s
-            ní. I za hranice Žižkova, do online prostoru. ŽN365 představuje v
+            ní. I za hranice Žižkova, i do online prostoru. ŽN365 představuje v
             průběhu celého roku kulturní program, live koncerty, výstavy
-            #PozorUmění a Vysílač – podcast, který odráží hodnoty festivalu.
+            PozorUmění a Vysílač – podcast, který odráží hodnoty festivalu.
           </p>
           <p>
             Chceš mít všechno z první ruky? Sleduj nás na našich sociálních

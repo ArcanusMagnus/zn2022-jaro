@@ -15,7 +15,7 @@ const MenuItem = (props) => {
 
   const link = props.link;
   return (
-    <li className={classes}>
+    <li className={classes} onClick={props.onMenuClick}>
       <NavLink to={link}>{props.children}</NavLink>
     </li>
   );

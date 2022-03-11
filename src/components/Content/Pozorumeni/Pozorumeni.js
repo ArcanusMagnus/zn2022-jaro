@@ -3,32 +3,32 @@ import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 import Card from "../../UI/Card";
 import Section from "../../UI/Section";
+import PozorumeniPhoto from "../../UI/PozorumeniPhoto";
 
 import styles from "./Pozorumeni.module.css";
-import image from "../../../assets/images/pozorumeni-bg.jpg";
-import square from "../../../assets/images/pozorumeni-square.jpg";
 
 const Pozorumeni = (props) => {
   return (
     <Section className={styles.pozorumeni} id="pozorumeni">
       <Card className={styles["pozorumeni"]}>
-        <div className={styles["pozorumeni-left"]}>
-          <img src={image} alt="" />
-        </div>
-        <div className={styles["pozorumeni-left__square"]}>
-          <img src={square} alt="" />
-        </div>
+        <PozorumeniPhoto
+          wideClass={styles["pozorumeni-left"]}
+          squareClass={styles["pozorumeni-left__square"]}
+        />
         <div className={styles["pozorumeni-right"]}>
           <div>
             <h3>PozorUmění</h3>
             <p>
-              Další novou sekcí Žižkovské noci je i PozorUmění, které se ve svém
-              celoročním programu zaměřuje na výtvarné, audiovizuální i
-              performativní umění a jeho prezentaci ve formálním (galerijním) i
-              neformálním (kavárenském/barovém) prostředí či veřejném prostoru
-              Žižkova. PozorUmění se snaží uměleckou tvorbu napříč médii a
-              vyjadřovacími prostředky uchopit jako formu komunikace a sdílet ji
-              tak veřejnosti.
+              PozorUmění začalo jako galerijní sekce festivalu Žižkovská noc
+              naplno fungovat v květnu 2021 pod zastřešujícím ročním tématem
+              identita–diverzita–komunita. Od té chvíle uspořádal náš tým více
+              než 15 výstav a doprovodných programů.
+            </p>
+            <p>
+              Během Jarní Žižkovské noci ve dnech 25. a 26.3. představíme v
+              prostorech podniků Medium43 a Bar Cíl tvorbu dvou autorů, kteří se
+              liší věkem, pohlavím i zpracovávanými tématy, přesto je ale jedno
+              spojuje – nemají za sebou akademické umělecké vzdělání.
             </p>
             <div className={styles.socials}>
               <a
