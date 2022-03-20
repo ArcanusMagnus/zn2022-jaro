@@ -9,7 +9,7 @@ import "./index.css";
 import App from "./App";
 
 ReactGA.initialize('UA-152908617-1');
-TagManager.initialize({gtmId: 'GTM-5GMLPLH'});
+TagManager.initialize({gtmId: 'GTM-M9LSVR5'});
 ReactPixel.init('343093872945766');
 
 ReactDOM.render(

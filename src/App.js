@@ -26,7 +26,7 @@ const App = () => {
       <Header/>
       {ticketsFormActive && <Tickets onClose={ticketsFormCloseHandler} />}
       <Routes>
-        <Route path="/" element={<Hranice onTicketsClick={ticketsFormOpenHandler} />}>
+        <Route path="/" element={<Hranice onTicketsClick={ticketsFormOpenHandler} ticketsActive={ticketsFormActive} />}>
           <Route path="tickets" element={<Tickets onClose={ticketsFormCloseHandler} />} />
         </Route>
         <Route path="program" exact element={<Program />} />

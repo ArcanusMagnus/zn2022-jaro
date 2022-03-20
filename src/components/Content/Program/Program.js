@@ -15,7 +15,7 @@ const Program = (props) => {
 
   useEffect(() => {
     const fetchProgram = async () => {
-      const response = await fetch("http://89.221.219.23:8080/bands/");
+      const response = await fetch("https://majernicek.eu/bands/");
 
       if (!response.ok) {
         throw new Error("Načtení kapel selhalo.");

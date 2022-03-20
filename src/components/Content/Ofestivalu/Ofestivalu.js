@@ -22,7 +22,7 @@ const Ofestivalu = (props) => {
             PozorUmění a Vysílač – podcast, který odráží hodnoty festivalu.
           </p>
           <p>
-            Chceš mít všechno z první ruky? Sleduj nás na našich sociálních
+            Chcete mít všechno z první ruky? Sledujte nás na našich sociálních
             sítích.
           </p>
           <Links links={links} />
