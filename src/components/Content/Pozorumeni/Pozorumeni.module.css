@@ -55,6 +55,12 @@
   font-size: 1rem;
 }
 
+.pozorumeni a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: 2px underline;
+}
+
 .socials {
   font-size: 2rem;
 }
@@ -68,7 +74,7 @@
   padding: 0.5rem;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1760px) {
   .pozorumeni-left__square {
     display: block;
   }

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebookF, faSpotify, faApple } from "@fortawesome/free-brands-svg-icons";
 
 import VysilacPlayer from "./VysilacPlayer";
 import Card from "../../UI/Card";
@@ -29,6 +29,8 @@ const Vysilac = (props) => {
           <div className={styles.socials}>
             <a href="https://www.instagram.com/vysilac/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="https://www.facebook.com/vysilac.podcast" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a>
+            <a href="https://open.spotify.com/show/3KobdopDV4BUkr9khhzTmf" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faSpotify} /></a>
+            <a href="https://podcasts.apple.com/cz/podcast/vys%C3%ADla%C4%8D/id1538409505" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faApple} /></a>
           </div>
         </div>
       </Card>

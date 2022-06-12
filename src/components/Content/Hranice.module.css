@@ -54,8 +54,28 @@
   font-size: 1rem;
 }
 
+.hranice a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: underline 2px;
+}
+
+.hranice a:hover,
+.hranice a:active {
+  cursor: pointer;
+}
+
 .buyTickets {
   width: 100%;
+}
+
+@media screen and (max-width: 1720px) {
+  .hranice-left {
+    display: none;
+  }
+  .hranice-left__square{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1365px) {

@@ -21,12 +21,12 @@ const Menu = (props) => {
       >
         Neznáme hranice
       </MenuItem>
-      <MenuItem
+      {/* <MenuItem
         link="/program"
         onMenuClick={menuClickHandler}
       >
         Program
-      </MenuItem>
+      </MenuItem> */}
       {/* <MenuItem
         link="merch"
         onMenuClick={menuClickHandler}

@@ -25,10 +25,12 @@ const Pozorumeni = (props) => {
               než 15 výstav a doprovodných programů.
             </p>
             <p>
-              Během Jarní Žižkovské noci ve dnech 25. a 26.3. představíme v
-              prostorech podniků Medium43 a Bar Cíl tvorbu dvou autorů, kteří se
-              liší věkem, pohlavím i zpracovávanými tématy, přesto je ale jedno
-              spojuje – nemají za sebou akademické umělecké vzdělání.
+              15. září až 13. října proběhne Galerijní podzim #2 s ústředním
+              tématem “možnosti spolupráce”. Chceme dát příležitost co nejširší
+              škále umělců, autorů, tvůrců či kolektivů, proto vyhlašujeme open
+              call, do kterého se mohou zájemci přihlašovat až do 1. července.
+              Všechny potřebné informace najdete na <a href="https://www.facebook.com/events/371067648260460" target="_blank" rel="noreferrer">FB události</a> nebo nám napište
+              na <a href="mailto:pozorumeni@zizkovskanoc.net">pozorumeni@zizkovskanoc.net</a>, kam nám můžete posílat vaše práce.
             </p>
             <div className={styles.socials}>
               <a

@@ -22,3 +22,5 @@ const MenuItem = (props) => {
 };
 
 export default MenuItem;
+
+// ta šílenost s useMatch se dá nahradit skrze activeClassName u NavLink (lol)
