@@ -8,19 +8,14 @@
   z-index: 5;
   text-align: left;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.hranice-left,
-.hranice-right {
-  width: 50%;
-  margin: 0;
-}
 
 .hranice-left {
-  padding: 0;
+  width: 50%;
+  margin-right: 2rem;
   font-size: 0;
+  float: left;
 }
 
 .hranice-left img {
@@ -29,6 +24,9 @@
 
 .hranice-left__square {
   width: 50%;
+  margin-right: 2rem;
+  font-size: 0;
+  float: left;
   padding: 0;
   font-size: 0;
   display: none;
@@ -38,20 +36,14 @@
   width: 100%;
 }
 
-.hranice-right {
-  padding: 1rem 3rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-
 .hranice h2 {
   font-size: 1.8rem;
-  margin: 0;
+  margin-left: 2rem;
 }
 
 .hranice p {
   font-size: 1rem;
+  padding: 0 2rem;
 }
 
 .hranice a {
@@ -79,19 +71,16 @@
 }
 
 @media screen and (max-width: 1365px) {
-  .hranice{
-    flex-flow: column-reverse;
+  .hranice {
+    padding: 0;
+    padding-bottom: 2rem;
   }
 
   .hranice-left,
-  .hranice-right,
   .hranice-left__square {
     width: 100%;
-    margin: 0;
-  }
-
-  .hranice-right {
-    min-height: 60vw;
+    margin: 0 0 2rem 0;
+    padding: 0;
   }
 }
 
@@ -117,15 +106,5 @@
 
   .hranice-left__square {
     display: block;
-  }
-
-  .hranice-right{
-    padding: 1rem;
-  }
-}
-
-@media screen and (max-width: 1365px) and (max-aspect-ratio: 3/2) {
-  .hranice-right {
-    min-height: 90vw;
   }
 }

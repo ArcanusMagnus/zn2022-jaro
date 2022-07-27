@@ -1,5 +1,11 @@
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
+import Modal from "../UI/Modal";
+
 import styles from "./Tickets.module.css";
 
 const Tickets = (props) => {
@@ -16,7 +22,16 @@ const Tickets = (props) => {
     document.body.querySelector("#goout").appendChild(script);
   }, []);
 
-  return <div id="goout" className={styles.goout + ' ' + styles.active}></div>;
+  return (
+    <Modal onClose={props.onClose}>
+      <div className={styles.closeButton} onClick={props.onClose}>
+        <Link to="/">
+          <FontAwesomeIcon icon={faTimes} />
+        </Link>
+      </div>
+      <div id="goout"></div>
+    </Modal>
+  );
 };
 
 export default Tickets;
